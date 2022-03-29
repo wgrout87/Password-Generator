@@ -213,6 +213,7 @@ var characterOptionPrompts = function () {
 	}
 };
 
+// THIS CODE WAS PROVIDED BY THE UNIVERSITY OF UTAH CODING BOOTCAMP
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
@@ -227,3 +228,4 @@ function writePassword () {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+// END CODE PROVIDED BY THE UNIVERSITY OF UTAH CODING BOOTCAMP
