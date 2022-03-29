@@ -59,9 +59,25 @@ var randomPositon = function () {
 
 var generatePassword = function() {
 	chosenCharacters();
-
+	var newPassword = "";
+		
+	for (var i = 0; i < passwordLength; i++) {
+		if (i === lowerCase.position && lowerCase.wasSelected) {
+			newPassword += lowerCase.chars.charAt(Math.floor(Math.random() * lowerCase.chars.length));
+		} else if (i === upperCase.position && upperCase.wasSelected) {
+			newPassword += upperCase.chars.charAt(Math.floor(Math.random() * upperCase.chars.length));
+		} else if (i === numeric.position && numeric.wasSelected) {
+			newPassword += numeric.chars.charAt(Math.floor(Math.random() * numeric.chars.length));
+		} else if (i === specialCharacter.position && specialCharacter.wasSelected) {
+			newPassword += specialCharacter.chars.charAt(Math.floor(Math.random() * specialCharacter.chars.length));
+		} else {
+		newPassword += passwordCharacters.charAt(Math.floor(Math.random() * passwordCharacters.length));
+		}
+	}
+	console.log(newPassword);
 };
 
+generatePassword();
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
