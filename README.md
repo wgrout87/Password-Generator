@@ -30,4 +30,4 @@ The deployed website should resemeble the following screenshot.
 ![Password Generator Screenshot](./assets/images/password-generator.png)
 
 ## Credits
-The HTML and CSS content, as well as a small but important portion of the JavaScript was provided by the University of Utah Coding Bootcamp.
+The HTML and CSS content, as well as a small but important portion of the JavaScript was provided by the University of Utah Coding Bootcamp. It was written by Xander Rapstine.

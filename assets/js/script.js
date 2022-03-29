@@ -213,7 +213,7 @@ var characterOptionPrompts = function () {
 	}
 };
 
-// THIS CODE WAS PROVIDED BY THE UNIVERSITY OF UTAH CODING BOOTCAMP
+// THIS CODE WAS PROVIDED BY THE UNIVERSITY OF UTAH CODING BOOTCAMP. WRITTEN BY XANDER RAPSTINE
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
