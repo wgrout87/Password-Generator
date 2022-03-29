@@ -1,4 +1,9 @@
-// Assignment code here
+var passwordLength = 8;
+var lowerCase = "abcdefghijklmnopqrstuvwxyz";
+var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var numeric = "0123456789";
+var specialCharacter = [" ", "!", "\"", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "^", "_", "`", "{", "|", "}", "~"];
+console.log(specialCharacter[2]);
 
 
 // Get references to the #generate element
