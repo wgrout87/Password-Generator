@@ -110,17 +110,36 @@ var generatePassword = function() {
 		newPassword += passwordCharacters.charAt(Math.floor(Math.random() * passwordCharacters.length));
 		}
 	}
+
+	// Resets values for next password generation
+	valuesReset();
+
 	// When called, the new password is returned to the function caller
 	return newPassword;
 };
 
-console.log(generatePassword());
+// This function resets the values that were altered by the user's choices
+var valuesReset = function () {
+	passwordLength = 8;
+	lowerCase.wasSelected = false;
+	lowerCase.position = null;
+	upperCase.wasSelected = false;
+	upperCase.position = null;
+	numeric.wasSelected = false;
+	numeric.position = null;
+	specialCharacter.wasSelected = false;
+	specialCharacter.position = null;
+	passwordCharacters = "";
+	positionArray = [];
+	console.log(passwordCharacters);
+	console.log(positionArray);
+};
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
-function writePassword() {
+function writePassword () {
 	var password = generatePassword();
 	var passwordText = document.querySelector("#password");
 
